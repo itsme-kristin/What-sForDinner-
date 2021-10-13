@@ -39,8 +39,21 @@ app.get('/random', (req, res) => {
 
 app.get('/ingredient', (req, res) => {
   axios({
-    url: `http://www.themealdb.com/api/json/v2/${AUTH}/filter.php?i=${req.body.ingredient}`,
-    data: req.body.ingredient
+    url: `http://www.themealdb.com/api/json/v2/${AUTH}/filter.php?i=${req.query.ingredient}`,
+    data: req.query.ingredient
+  })
+  .then((response) => {
+    res.send(response.data.meals)
+  }).catch((err) => {
+    console.info('Error making the request');
+    res.status(400).send();
+  })
+})
+
+app.get('/recipe', (req, res) => {
+  axios({
+    url: `http://www.themealdb.com/api/json/v2/${AUTH}/search.php?s=${req.query.recipe}`,
+    data: req.query.recipe
   })
   .then((response) => {
     res.send(response.data.meals)

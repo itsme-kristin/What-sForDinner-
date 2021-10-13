@@ -23,10 +23,11 @@ const RecipeCard = ({ recipe }) => {
   return (
     <Card className={classes.root} variant='outlined'>
       <CardMedia
-      component='div'
-      className={classes.media}
-      image={recipe.strMealThumb}
-      title={recipe.strMeal} />
+        component='div'
+        className={classes.media}
+        image={recipe.strMealThumb}
+        title={recipe.strMeal}
+      />
       <CardContent className={classes.content}>
         <h3 className='recipeTitle'>{recipe.strMeal}</h3>
       </CardContent>
