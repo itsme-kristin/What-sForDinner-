@@ -1,6 +1,7 @@
-import React from 'react';
-import { Card, CardMedia, CardContent } from '@mui/material';
+import React, { useState } from 'react';
+import { Card, CardMedia, CardContent, Modal } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import RecipeModal from './RecipeModal.jsx';
 import '../App.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -18,20 +19,34 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const RecipeCard = ({ recipe }) => {
+  const [showRecipe, setShowRecipe] = useState(false);
   const classes = useStyles();
 
+  const openShowRecipe = () => {
+    setShowRecipe(true);
+  }
+
+  const closeShowRecipe = () => {
+    setShowRecipe(false);
+  }
+
   return (
-    <Card className={classes.root} variant='outlined'>
-      <CardMedia
-        component='div'
-        className={classes.media}
-        image={recipe.strMealThumb}
-        title={recipe.strMeal}
-      />
-      <CardContent className={classes.content}>
-        <h3 className='recipeTitle'>{recipe.strMeal}</h3>
-      </CardContent>
-    </Card>
+    <React.Fragment>
+      <Card className={classes.root} variant='outlined' onClick={openShowRecipe}>
+        <CardMedia
+          component='div'
+          className={classes.media}
+          image={recipe.strMealThumb}
+          title={recipe.strMeal}
+        />
+        <CardContent className={classes.content}>
+          <h3 className='recipeTitle'>{recipe.strMeal}</h3>
+        </CardContent>
+      </Card>
+      <Modal open={showRecipe} onClose={closeShowRecipe} >
+        <RecipeModal recipe={recipe}/>
+      </Modal>
+    </React.Fragment>
   );
 }
 

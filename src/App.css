@@ -26,6 +26,10 @@
   margin-bottom: 30px;
 }
 
+.recipeText {
+  font-size: 12px;
+}
+
 .footer {
   background-image: url('https://images.unsplash.com/photo-1606913079621-e64bd28682ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjMxfHxjb29raW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
   background-repeat: no-repeat;
