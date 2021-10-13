@@ -17,7 +17,7 @@
 # About
 I was tasked with building a website in two days. I brainstormed an idea, planned it out, and put it together from scratch using a third-party API, theMealDB.
 
-![](./data/gifs/whatsfordinner.gif)
+![](./data/whatsfordinner.gif)
 
 
 ## Stack
