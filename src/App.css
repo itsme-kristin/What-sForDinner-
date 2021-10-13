@@ -26,6 +26,19 @@
   margin-bottom: 30px;
 }
 
+.surprise {
+  background-color: olivedrab;
+  color: #f5f5f5;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.surprise:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
 .recipeText {
   font-size: 14px;
 }

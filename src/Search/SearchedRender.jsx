@@ -6,7 +6,6 @@ const inline = {
   leftButton: {
     position: 'absolute',
     top: '50%',
-    left: '-5px',
     fontSize: 32,
     color: 'black',
     opacity: '50%',
@@ -17,7 +16,6 @@ const inline = {
   rightButton: {
     position: 'absolute',
     top: '50%',
-    right: '-5px',
     fontSize: 32,
     color: 'black',
     opacity: '50%',

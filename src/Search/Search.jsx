@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchedRender from './SearchedRender';
 import axios from 'axios';
-import { Grid, IconButton, Button } from '@mui/material';
+import { Grid, IconButton } from '@mui/material';
 
 const Search = () => {
   const [searchedMeals, setSearchedMeals] = useState([]);
@@ -77,7 +77,7 @@ const Search = () => {
           </form>
           </Grid>
           <Grid item align='center' xs={3}>
-           <Button variant='black' onClick={handleSurprise}>Surprise Me!</Button>
+           <button className='surprise' cursor='pointer' onClick={handleSurprise}>Surprise Me!</button>
           </Grid>
       </Grid>
       {searchClicked && !searchedMeals.length ?
