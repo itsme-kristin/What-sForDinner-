@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# What's For Dinner?
+A recipe app where you can browse the latest recipes, search for recipes by ingredient and by name, and get a random assortment of recipes if you are having a hard time deciding what to eat!
 
 ## Available Scripts
 
