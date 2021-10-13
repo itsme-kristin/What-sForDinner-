@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchedRender from './SearchedRender';
 import axios from 'axios';
-import { Grid } from '@mui/material';
+import { Grid, IconButton, Button } from '@mui/material';
 
 const Search = () => {
   const [searchedMeals, setSearchedMeals] = useState([]);
@@ -58,26 +58,26 @@ const Search = () => {
     <div>
       <h2 className='title'>Looking for Recipes?</h2>
       <Grid container className='searchOptions'>
-        <Grid item align='left' xs={5}>
+        <Grid item align='left' xs={4}>
           <form onSubmit={handleIngredientSearch}>
             <label className='searchText'>
               Search by Ingredient:
               <input type='text' name='Ingredient' value={ingredientSearch} onChange={handleIngredientChange} />
             </label>
-            <input type='submit' value='Go!' />
+            <IconButton type='submit' className='material-icons'>search</IconButton>
           </form>
           </Grid>
-          <Grid item align='left' xs={5}>
+          <Grid item align='left' xs={4}>
           <form onSubmit={handleRecipeSearch}>
             <label className='searchText'>
               Search by Recipe Keyword:
               <input type='text' name='Recipe' value={recipeSearch} onChange={handleRecipeChange}/>
             </label>
-            <input type='submit' value='Go!' />
+            <IconButton type='submit' className='material-icons'>search</IconButton>
           </form>
           </Grid>
-          <Grid item align='left' xs={2}>
-           <button onClick={handleSurprise}>Surprise Me!</button>
+          <Grid item align='center' xs={3}>
+           <Button variant='black' onClick={handleSurprise}>Surprise Me!</Button>
           </Grid>
       </Grid>
       {searchClicked && !searchedMeals.length ?

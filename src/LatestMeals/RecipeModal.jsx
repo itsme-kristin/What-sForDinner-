@@ -6,12 +6,13 @@ const useStyles = makeStyles({
   recipeModal: {
     position: 'absolute',
     width: 900,
-    height: 650,
+    height: 600,
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     backgroundColor: 'white',
-    padding: '10px'
+    padding: '10px',
+    overflow: 'scroll',
   },
   recipePhoto: {
     margin: '4px',
@@ -85,7 +86,7 @@ const RecipeModal = ({ recipe }) => {
           <Grid item xs={2} >
             <h3 className='title'>{modalData.title}</h3>
           </Grid>
-          <Grid item xs={9} >
+          <Grid item xs={8} >
             <Paper
               className={classes.recipePhoto}
               style={{

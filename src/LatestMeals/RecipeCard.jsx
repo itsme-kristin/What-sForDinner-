@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     height: 280,
   },
   media: {
-    paddingTop: '80%',
+    paddingTop: '75%',
     cursor: 'pointer',
   },
   content: {

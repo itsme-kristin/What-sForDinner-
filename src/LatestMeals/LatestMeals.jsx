@@ -3,6 +3,29 @@ import axios from 'axios';
 import RecipeCard from './RecipeCard.jsx';
 import ItemsCarousel from 'react-items-carousel';
 
+const inline = {
+  leftButton: {
+    position: 'absolute',
+    top: '50%',
+    left: '-5px',
+    fontSize: 32,
+    color: 'black',
+    opacity: '50%',
+    userSelect: 'none',
+    cursor: 'pointer'
+  },
+
+  rightButton: {
+    position: 'absolute',
+    top: '50%',
+    right: '-5px',
+    fontSize: 32,
+    color: 'black',
+    opacity: '50%',
+    userSelect: 'none',
+    cursor: 'pointer'
+  }
+}
 
 const LatestMeals = () => {
   const [latestMealsList, setLatestMealsList] = useState(null);
@@ -32,8 +55,8 @@ const LatestMeals = () => {
             activeItemIndex={activeItemIndex}
             numberOfCards={4}
             gutter={20}
-            leftChevron={<button>{'<'}</button>}
-            rightChevron={<button>{'>'}</button>}
+            leftChevron={<i className='material-icons' style={inline.leftButton}>arrow_circle_left</i>}
+            rightChevron={<i className='material-icons' style={inline.rightButton}>arrow_circle_right</i>}
             outsideChevron
             chevronWidth={chevronWidth}
           >
