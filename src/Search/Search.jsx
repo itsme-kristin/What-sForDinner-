@@ -9,6 +9,7 @@ const Search = () => {
   const [ingredientSearch, setIngredientSearch] = useState('');
   const [recipeSearch, setRecipeSearch] = useState(null);
 
+  //for deployment, change endpoints to be like this: '/random'
   const handleSurprise = () => {
     axios.get('http://localhost:3050/random')
       .then(recipes => {

@@ -43,7 +43,6 @@ I was tasked with building a website in two days. I brainstormed an idea, planne
     <tr>
       <th>Utilities</th>
       <td>
-        <img alt="Webpack" src="https://img.shields.io/badge/webpack%20-%2320232a.svg?&style=for-the-badge&logo=webpack&logoColor=%2361DAFB" />
         <img alt="Babel" src="https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black" />
         <img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=red" />
         <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
@@ -59,7 +58,7 @@ I was tasked with building a website in two days. I brainstormed an idea, planne
 </table>
 
 
-# Features 
+# Features
 
   * *Latest Meals*: updates through the API to show the user the latest meals, user can scroll through the carousel to look at all 10 of the latest meals (React-Items-Carousel)
   * *Recipe Modal*: appears when a user clicks on a recipe card, shows the title, thumbnail picture, ingredients, and directions

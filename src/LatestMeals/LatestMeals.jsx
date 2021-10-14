@@ -31,6 +31,7 @@ const LatestMeals = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
 
+  //for deployment change the endpoint to '/latest'
   useEffect(() => {
     setDoneSearching(false);
     axios.get('http://localhost:3050/latest')

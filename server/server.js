@@ -7,6 +7,8 @@ const app = express();
 const port = 3050;
 
 app.use(express.json());
+//For deployment, change app.use to this:
+// app.use(express.static('/home/ubuntu/WhatsForDinner/build'));
 app.use(express.static('../public/index.html'));
 app.use(compression());
 app.use(cors());
