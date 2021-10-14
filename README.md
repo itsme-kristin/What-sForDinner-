@@ -43,7 +43,6 @@ I was tasked with building a website in two days. I brainstormed an idea, planne
     <tr>
       <th>Utilities</th>
       <td>
-        <img alt="Babel" src="https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black" />
         <img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=red" />
         <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
       </td>
